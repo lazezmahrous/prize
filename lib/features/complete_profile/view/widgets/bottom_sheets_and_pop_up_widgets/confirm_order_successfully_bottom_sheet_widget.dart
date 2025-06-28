@@ -9,7 +9,6 @@ import 'package:prize/core/widgets/app_disable_button.dart';
 import 'package:prize/core/widgets/app_enable_button.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
-import 'package:prize/features/complete_profile/wishlist/view/screens/sport_wishlsit_add_items.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 

@@ -5,7 +5,6 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/data/models/category_model.dart';
 import 'package:prize/features/home/view/widgets/categories/single_dot_page_indicator.dart';
-import 'package:prize/features/onboarding/view/widgets/custom_page_indicator.dart';
 
 class AllCategoriseSectionWidget extends StatefulWidget {
   const AllCategoriseSectionWidget({super.key});
@@ -18,7 +17,7 @@ class AllCategoriseSectionWidget extends StatefulWidget {
 class _AllCategoriseSectionWidgetState
     extends State<AllCategoriseSectionWidget> {
   final PageController _pageController = PageController();
-  int _currentPage = 0;
+ int _currentPage = 0;
 
   final List<CategoryModel> _allCategories = [
     CategoryModel(

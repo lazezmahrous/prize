@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 
 class BottomNavbarIconWidget extends StatelessWidget {
-  BottomNavbarIconWidget(
+ const BottomNavbarIconWidget(
       {super.key,
       required this.iconPath,
       required this.cuttentIndex,
@@ -14,7 +14,7 @@ class BottomNavbarIconWidget extends StatelessWidget {
   final String iconPath;
   final int cuttentIndex;
   final int selectedIndex;
-  Color? iconColor;
+ final Color? iconColor;
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(

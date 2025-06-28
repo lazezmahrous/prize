@@ -5,12 +5,12 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 
 class AppFillBckgroundButton extends StatelessWidget {
   final String title;
-  double? width, height;
+  final double? width, height;
   final Function() onTap;
   final Color? startColor;
   final Color? endColor;
 
-  AppFillBckgroundButton({
+  const AppFillBckgroundButton({
     super.key,
     required this.onTap,
     required this.title,

@@ -2,7 +2,7 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/extensions/text_style_extension.dart';
 import 'package:prize/core/utils/extensions/price_formatter_extension.dart';
-import 'package:prize/features/splash/bloc/settings_cubit.dart';
+
 
 /// Displays a numeric amount formatted as a price with currency symbol.
 ///
@@ -40,7 +40,7 @@ class FormattedPriceWidget extends StatelessWidget {
         ),
         children: [
           TextSpan(
-            text: " ${getSettings().currencySymbol}",
+            text: " ${"getSettings().currencySymbol"}",
             style: context.styleBodyLargeLight.copyWith(
               color: color ?? AppColors.secondary,
               fontSize: fontSize * 0.70,

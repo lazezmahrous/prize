@@ -1,7 +1,6 @@
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/utils/resources/app_theme_text_styles.dart';
 import 'package:prize/core/utils/validation/app_validation.dart';
 import 'package:prize/core/widgets/data_picker_icon_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/buttons/next_button_widget.dart';
