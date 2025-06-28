@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/widgets/app_enable_button.dart';
@@ -48,7 +50,7 @@ class CreateWishlistBanarWidget extends StatelessWidget {
                       maxWidth: 150.w,
                     ),
                     child: Text(
-                      'Create your wishlist',
+                      LocaleKeys.home_wishist_banar_title.tr(),
                       style: TextStyle(
                         fontSize: 18,
                         color: AppColors.browen,

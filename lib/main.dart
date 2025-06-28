@@ -36,7 +36,7 @@ void main() async {
     // Init app package info singleton instance
     PackageInfoModel.init(),
   ]);
-
+ 
   // Check if user open app first time
   checkFirstTimeChecker();
   // Set bloc observer to log bloc events

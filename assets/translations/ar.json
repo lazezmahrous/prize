@@ -339,26 +339,21 @@
     "pay_param": "دفع {}",
     "payment_done_successfully": "تم الدفع بنجاح"
   },
+
+
   "home": {
-    "statistics": {
-      "properties": "عقارات",
-      "sold": "مباع",
-      "operations": "عمليات"
-    },
-    "actions": {
-      "multiple_share": "مشاركة متعددة",
-      "add_new_property": "إضافة عقار جديد"
-    },
-    "property": {
-      "for_sale": "للبيع",
-      "villa_on_sea": "فيلا مطلة على البحر",
-      "jeddah_corniche": "دمياط الجديدة - المنطقة المركزية",
-      "rooms": "غرف",
-      "bathrooms": "حمام",
-      "area_sqm": "م",
-      "view_details": "عرض التفاصيل",
-      "units_for_rent": "وحدات للإيجار",
-      "units_for_sale": "وحدات للبيع"
+  "wishist": {
+    "banar_title": "أنشئ قائمة الأمنيات الخاصة بك",
+    "banar_button_title": "+ أنشئ قائمة الأمنيات"
+  },
+
+  "upcomming_events": {
+    "appbar_title": "مناسباتي القادمة",
+    "events_title": {
+      "birthday": "عيد ميلاد",
+      "grad": "التخرج"
     }
   }
+}
+
 }

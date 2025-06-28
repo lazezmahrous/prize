@@ -1,12 +1,11 @@
 import 'dart:io' show Platform;
 
 import 'package:prize/core/dependency_injection.dart';
-import 'package:prize/features/auth/forget_password/view/screens/forget_password_screen.dart';
 import 'package:prize/features/auth/login/view/screens/login_screen.dart';
-import 'package:prize/features/auth/otp/data/enums/select_otp_enums.dart';
-import 'package:prize/features/auth/otp/view/screens/otp_screen.dart';
 import 'package:prize/features/auth/signup/view/screens/signup_screen.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
+import 'package:prize/features/home/view/bottom_navbar/bottom_navbar.dart';
+import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
 import 'package:prize/features/onboarding/view/screens/onboarding_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/widgets/not_found_screen.dart';
@@ -17,7 +16,6 @@ import 'package:prize/features/tabs/view/screens/tabs_screen.dart';
 part 'router_builder.dart';
 
 sealed class AppRoutes {
-
   static const String login = '/login';
   static const String signUp = '/signUp';
   static const String forgetPassword = '/forgetPassword';
@@ -25,7 +23,7 @@ sealed class AppRoutes {
   static const String completeProfile = '/completeProfile';
   static const String addItems = '/addItems';
   static const String home = '/home';
-
+  static const String bottomNavBar = '/bottomNavBar';
 
   static const String tabs = '/tabs';
   static const String onBoarding = '/boarding_screen';
@@ -35,19 +33,19 @@ sealed class AppRoutes {
   static const String publishProperty = '/publish_property';
 
   /// Routes Getters
-// static Future<T?> pushToPaymentMethods<T>(
-//   PaymentArguments arguments, {
-//   bool replacement = false,
-// }) async {
-//   if (replacement) {
-//     return Navigator.pushReplacementNamed(
-//       getContext(),
-//       _paymentMethods,
-//       arguments: arguments,
-//     );
-//   }
-//   return pushNamed<T>(_paymentMethods, arguments: arguments);
-// }
+  // static Future<T?> pushToPaymentMethods<T>(
+  //   PaymentArguments arguments, {
+  //   bool replacement = false,
+  // }) async {
+  //   if (replacement) {
+  //     return Navigator.pushReplacementNamed(
+  //       getContext(),
+  //       _paymentMethods,
+  //       arguments: arguments,
+  //     );
+  //   }
+  //   return pushNamed<T>(_paymentMethods, arguments: arguments);
+  // }
 }
 
 class MyRouter {
@@ -66,7 +64,13 @@ class MyRouter {
             child: const TabsScreen(),
           ),
         );
-
+      case AppRoutes.bottomNavBar:
+        return MaterialPageRoute(
+          builder: (context) => BlocProvider(
+            create: (context) => DI.di<BottomNavBarNavigatorCubit>(),
+            child: const BottomNavBar(),
+          ),
+        );
       case AppRoutes.onBoarding:
         return _RouterBuilder.slideX(
           child: const OnboardingScreen(),
@@ -81,12 +85,11 @@ class MyRouter {
         return _RouterBuilder.defaultPageRoute(
           child: const SignupScreen(),
         );
-        
+
       case AppRoutes.completeProfile:
         return _RouterBuilder.defaultPageRoute(
           child: const CompleteProfileScreen(),
         );
-
 
       // todo: Check this ya Abdul-Rahman
       // case AppRoutes.selectPackage:
@@ -98,7 +101,7 @@ class MyRouter {
       //       child: const SelectPackageScreen(),
       //     ),
       //   );
-      
+
       // case AppRoutes.publishProperty:
       //   _publishPropertyCubit = DI.di<PublishPropertyCubit>();
       //   return _RouterBuilder.slideX(

@@ -333,26 +333,19 @@
     "pay_param": "Pay {}",
     "payment_done_successfully": "Payment done successfully"
   },
-  "home": {
-    "statistics": {
-      "properties": "Properties",
-      "sold": "Sold",
-      "operations": "Operations"
-    },
-    "actions": {
-      "multiple_share": "Multiple Share",
-      "add_new_property": "Add New Property"
-    },
-    "property": {
-      "for_sale": "For Sale",
-      "villa_on_sea": "Villa with Sea View",
-      "jeddah_corniche": "Jeddah Corniche - Central Area",
-      "rooms": "Rooms",
-      "bathrooms": "Bathrooms",
-      "area_sqm": "sqm",
-      "view_details": "View Details",
-      "units_for_rent": "Units for Rent",
-      "units_for_sale": "Units for Sale"
+  "home":{
+  "wishist":{
+    "banar_title":"Create Your Wishlist",
+    "banar_button_title":"+ Create Your Wishlist"
+  },
+
+  "upcomming_events":{
+    "appbar_title":"My Upcoming events",
+    "events_title":{
+      "birthday":"birthday",
+      "grad":"gradulition"
     }
   }
+ }
+
 }
