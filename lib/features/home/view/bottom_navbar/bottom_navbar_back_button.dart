@@ -6,9 +6,9 @@ import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navi
 
 
 class BottomNavbarBackButton extends StatefulWidget {
-  BottomNavbarBackButton({super.key, required this.child, this.enable = false});
+ const BottomNavbarBackButton({super.key, required this.child, this.enable = false});
   final Widget child;
-  bool? enable;
+ final bool? enable;
   @override
   State<BottomNavbarBackButton> createState() => _BottomNavbarBackButtonState();
 }

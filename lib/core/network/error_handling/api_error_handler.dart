@@ -1,8 +1,6 @@
 // ignore_for_file: empty_catches
 
 import 'dart:developer';
-
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/network/error_handling/api_error_model.dart';
 import 'package:prize/core/routing/app_router.dart';
 import 'package:prize/core/routing/routers.dart';

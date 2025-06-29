@@ -1,9 +1,12 @@
 import 'package:prize/core/network/dio_factory.dart';
 import 'package:prize/core/utils/helper/cache_helper.dart';
+<<<<<<< HEAD
+=======
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
 import 'package:prize/features/splash/bloc/settings_cubit.dart';
 import 'package:prize/features/splash/data/data_source/settings_api_service.dart';
 import 'package:prize/features/splash/data/repo/settings_repo.dart';
+>>>>>>> 00ffef6277d94bf8db154156b220892c153fb648
 import 'package:prize/features/theme/bloc/theme_cubit.dart';
 import 'package:prize/features/theme/data/repo/theme_repo.dart';
 import 'package:dio/dio.dart';
@@ -47,11 +50,11 @@ abstract class DI {
     // );
 
     // Settings
-    _registerModule<SettingsRepo, SettingsCubit, SettingsApiService>(
-      repo: () => SettingsRepo(di()),
-      cubit: () => SettingsCubit(di()),
-      dataSource: () => SettingsApiService(di()),
-    );
+    // _registerModule<SettingsRepo, SettingsCubit, SettingsApiService>(
+    //   repo: () => SettingsRepo(di()),
+    //   cubit: () => SettingsCubit(di()),
+    //   dataSource: () => SettingsApiService(di()),
+    // );
 
     // banners
     // _registerModule<BannerRepo, BannerCubit, BannerRemoteDataSource>(

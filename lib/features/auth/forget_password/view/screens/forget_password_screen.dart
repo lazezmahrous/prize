@@ -81,7 +81,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               ),
               verticalSpace(10),
               Text(
-                LocaleKeys.auth_forget_password_lable.tr(),
+                LocaleKeys.auth_forget_password_label_male.tr(),
                 style: Theme.of(context)
                     .textTheme
                     .font16RegularDarkPeriwinkle(context),

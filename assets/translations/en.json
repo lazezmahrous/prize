@@ -148,7 +148,8 @@
       "email":"Email",
       "label":"Verification code",
       "enter_verification_code": "Enter the verification code",
-      "we_have_sent_code_to": "We have sent the verification code to",
+      "we_have_sent_code_to_phone_number": "Success! \n We’ve sent a password recovery message to your WhatsApp \n number:.Please check your WhatsApp messages. It might take a few moments.",
+      "we_have_sent_code_to_email": "Success! \n We’ve sent a password recovery message to your email.Please check your inbox or Spam folder.",
       "did_not_receive_code": "Didn’t receive code ?",
       "code": "Code",
       "otp_code_resent_check": "OTP code has been re-sent, please check",
@@ -167,7 +168,8 @@
     },
     "forget_password":{
       "title":"Forget Password?",
-      "lable":"Enter your phone number to send you a message to recover your password easily.",
+      "label_emale":"Enter your email address to receive a password recovery message. \n Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
+      "label_phone":"Enter your phone number to receive a password recovery message on WhatsApp.",
       "recover_password":"Recover Password",
       "remember_your_password": "Remember Your Password ?"
     }
@@ -345,7 +347,37 @@
       "birthday":"birthday",
       "grad":"gradulition"
     }
+  },
+  "other_events":{
+    "appbar_title":"Other Events",
+    "event_model_title":"Birth day"
+  },
+  
+  "categories":{
+    "appbar_title":"Categories",
+    "categories_section":{
+      "kids_fashion":"Kid'\\s fashion",
+      "mens_fashion":"Men'\\s fashion",
+      "Womens_fashion":"Womens fashion",
+      "home_kitchen":"Home & Kitchen",
+      "appliances":"Appliances",
+      "mobiles":"Mobiles",
+      "video_games":"Video games",
+      "televisions":"Televisions",
+      "headphones":"Headphones",
+      "cameras":"Cameras"
+    }
+  } , 
+  "mothers_day_gifts":{
+  "appbar_title":"Mother's day gifts"
+  },
+  "best_gifts_forGrads":{
+    "appbar_title_best_gifts":"Best gifts for grads",
+    "appbar_title_birthday_gif":"Birthday gifts"
   }
+ },
+ "product" : {
+  "offer": "OFF"
  }
 
 }

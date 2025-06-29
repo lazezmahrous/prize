@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prize/core/utils/helper/check_auth_callback.dart';
 import 'package:prize/core/utils/resources/app_size.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 

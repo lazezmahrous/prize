@@ -1,7 +1,6 @@
-import 'package:prize/core/widgets/customs/home_pop_scope.dart';
+
 import 'package:prize/features/home/view/screens/home_screen.dart';
 // import 'package:prize/features/home/view/screens/home_screen.dart';
-import 'package:prize/features/setting/view/screens/setting_screen.dart';
 import 'package:prize/features/tabs/view/cubit/tabs_cubit.dart';
 import 'package:prize/features/tabs/view/widgets/bottom_bar.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
@@ -46,16 +45,16 @@ class TabsScreen extends StatelessWidget {
       // ),
 
       /// Settings
-      CustomBottomBarItem(
-        title: LocaleKeys.common_navigation_settings.tr(),
-        icon: CustomBottomBarIcon(
-          icon: const Icon(Icons.settings_outlined),
-          activeIcon: const Icon(Icons.settings),
-        ),
-        screen: HomePopScope(
-          child: const SettingsScreen(),
-        ),
-      ),
+      // CustomBottomBarItem(
+      //   title: LocaleKeys.common_navigation_settings.tr(),
+      //   icon: CustomBottomBarIcon(
+      //     icon: const Icon(Icons.settings_outlined),
+      //     activeIcon: const Icon(Icons.settings),
+      //   ),
+      //   screen: HomePopScope(
+      //     child: const SettingsScreen(),
+      //   ),
+      // ),
     ];
 
     return BlocBuilder<TabsCubit, int>(

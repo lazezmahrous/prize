@@ -1,3 +1,5 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_theme_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -19,10 +21,21 @@ class OfferWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.r),
         ),
         child: Center(
-          child: Text(
-            '15% OFF',
-            style: Theme.of(context).textTheme.offerTextStyle(context),
-          ),
+          child: Text.rich(
+           
+              TextSpan(
+                text: "15%",
+                style: Theme.of(context).textTheme.offerTextStyle(context),
+             children: [
+              TextSpan(
+                text: LocaleKeys.product_offer.tr(),
+              )
+             ]
+              ),
+              
+              
+            
+          )
         ),
       ),
     );
