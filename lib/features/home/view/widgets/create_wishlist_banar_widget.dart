@@ -66,7 +66,7 @@ class CreateWishlistBanarWidget extends StatelessWidget {
                         maxWidth: 160.w,
                       ),
                       child: AppFillBckgroundButton(
-                          onTap: () {}, title: '+ Create wishlist'),
+                          onTap: () {}, title: LocaleKeys.home_wishist_banar_button_title.tr()),
                     ),
                   )
                 ],

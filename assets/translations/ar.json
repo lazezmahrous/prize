@@ -355,8 +355,36 @@
       "birthday": "عيد ميلاد",
       "grad": "التخرج"
     }
+  },"other_events": {
+  "appbar_title": "مناسبات أخرى",
+  "event_model_title": "عيد ميلاد"
+},
+
+"categories": {
+  "appbar_title": "الفئات",
+  "categories_section": {
+    "kids_fashion": "أزياء الأطفال",
+    "men's fashion": "أزياء الرجال",
+    "Women's_fashion": "أزياء النساء",
+    "home_kitchen": "المنزل والمطبخ",
+    "appliances": "الأجهزة",
+    "mobiles": "الهواتف المحمولة",
+    "video_games": "ألعاب الفيديو",
+    "televisions": "أجهزة التلفاز",
+    "headphones": "سماعات الرأس",
+    "cameras": "الكاميرات"
   }
 },
+"mothers_day_gifts": {
+  "appbar_title": "هدايا عيد الأم"
+},
+
+"best_gifts_forGrads": {
+  "appbar_title_best_gifts": "أفضل الهدايا للخريجين",
+  "appbar_title_birthday_gif": "هدايا عيد الميلاد"
+}
+},
+
 "product" : {
   "offer": "وفر"
  }

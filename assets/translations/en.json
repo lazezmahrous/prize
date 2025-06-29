@@ -347,6 +347,33 @@
       "birthday":"birthday",
       "grad":"gradulition"
     }
+  },
+  "other_events":{
+    "appbar_title":"Other Events",
+    "event_model_title":"Birth day"
+  },
+  
+  "categories":{
+    "appbar_title":"Categories",
+    "categories_section":{
+      "kids_fashion":"Kids fashion",
+      "men_s_fashion":"Men's fashion",
+      "Women_s_fashion":"Women's fashion",
+      "home_kitchen":"Home & Kitchen",
+      "appliances":"Appliances",
+      "mobiles":"Mobiles",
+      "video_games":"Video games",
+      "televisions":"Televisions",
+      "headphones":"Headphones",
+      "cameras":"Cameras"
+    }
+  } , 
+  "mothers_day_gifts":{
+  "appbar_title":"Mother's day gifts"
+  },
+  "best_gifts_forGrads":{
+    "appbar_title_best_gifts":"Best gifts for grads",
+    "appbar_title_birthday_gif":"Birthday gifts"
   }
  },
  "product" : {
