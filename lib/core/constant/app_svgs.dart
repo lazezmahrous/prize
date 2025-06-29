@@ -35,6 +35,7 @@ class AppSvgs {
   static const String searchNormal = 'assets/svgs/search-normal.svg';  
   static const String setting = 'assets/svgs/setting.svg';  
   static const String shapeVector = 'assets/svgs/shape_vector.svg';  
+  static const String shareForward = 'assets/svgs/share-forward.svg';  
   static const String shop = 'assets/svgs/shop.svg';  
   static const String star = 'assets/svgs/star.svg';  
   static const String successImage = 'assets/svgs/success_image.svg';  

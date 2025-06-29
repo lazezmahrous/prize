@@ -1,8 +1,10 @@
 import 'dart:io' show Platform;
 
 import 'package:prize/core/dependency_injection.dart';
+import 'package:prize/core/routing/routers.dart';
 import 'package:prize/features/auth/login/view/screens/login_screen.dart';
 import 'package:prize/features/auth/signup/view/screens/signup_screen.dart';
+import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
 import 'package:prize/features/home/view/bottom_navbar/bottom_navbar.dart';
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
@@ -10,49 +12,17 @@ import 'package:prize/features/onboarding/view/screens/onboarding_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/widgets/not_found_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:prize/features/product_details/views/screens/product_details_screen.dart';
 import 'package:prize/features/tabs/view/cubit/tabs_cubit.dart';
 import 'package:prize/features/tabs/view/screens/tabs_screen.dart';
 
 part 'router_builder.dart';
 
-sealed class AppRoutes {
-  static const String login = '/login';
-  static const String signUp = '/signUp';
-  static const String forgetPassword = '/forgetPassword';
-  static const String otp = '/otp';
-  static const String completeProfile = '/completeProfile';
-  static const String addItems = '/addItems';
-  static const String home = '/home';
-  static const String bottomNavBar = '/bottomNavBar';
-
-  static const String tabs = '/tabs';
-  static const String onBoarding = '/boarding_screen';
-
-  static const String search = '/search';
-  static const String selectPackage = '/select_package';
-  static const String publishProperty = '/publish_property';
-
-  /// Routes Getters
-  // static Future<T?> pushToPaymentMethods<T>(
-  //   PaymentArguments arguments, {
-  //   bool replacement = false,
-  // }) async {
-  //   if (replacement) {
-  //     return Navigator.pushReplacementNamed(
-  //       getContext(),
-  //       _paymentMethods,
-  //       arguments: arguments,
-  //     );
-  //   }
-  //   return pushNamed<T>(_paymentMethods, arguments: arguments);
-  // }
-}
 
 class MyRouter {
   MyRouter._();
 
   // static PublishPropertyCubit? _publishPropertyCubit;
-
   static Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case AppRoutes.tabs:
@@ -89,6 +59,14 @@ class MyRouter {
       case AppRoutes.completeProfile:
         return _RouterBuilder.defaultPageRoute(
           child: const CompleteProfileScreen(),
+        );
+      case AppRoutes.productDetails:
+              final product = settings.arguments as ProductModel;
+
+        return _RouterBuilder.defaultPageRoute(
+          child:  ProductDetailsScreen(
+            product:product ,
+          ),
         );
 
       // todo: Check this ya Abdul-Rahman

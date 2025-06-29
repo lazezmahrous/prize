@@ -8,7 +8,7 @@ class BottomNavBarNavigatorCubit extends Cubit<BottomNavBarNavigatorState> {
   BottomNavBarNavigatorCubit()
       : super(const BottomNavBarNavigatorState.initial());
 
-  int currentIndex = 2;
+  int currentIndex = 0;
 
   void goToIndex(int index) {
     currentIndex = index;

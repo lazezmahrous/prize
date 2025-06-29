@@ -1,3 +1,6 @@
+import 'package:prize/core/routing/app_router.dart';
+import 'package:prize/core/routing/routers.dart';
+import 'package:prize/core/utils/extensions/navigation_extension.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -7,10 +10,8 @@ import 'package:prize/features/auth/login/view/widgets/dont_have_account.dart';
 import 'package:prize/features/auth/login/view/widgets/forget_password_widget.dart';
 import 'package:prize/features/auth/login/view/widgets/login_form_field.dart';
 import 'package:prize/features/home/view/bottom_navbar/bottom_navbar.dart';
-import 'package:prize/features/home/view/screens/home_screen.dart';
 import 'package:prize/features/onboarding/view/widgets/app_submit_button.dart';
 import 'package:prize/features/auth/signup/data/text_field_model.dart';
-import 'package:prize/features/auth/otp/view/screens/otp_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -74,10 +75,13 @@ class LoginScreen extends StatelessWidget {
                   AppSubmitButton(
                     onTap: () {
                       // if (formKey.currentState!.validate()) {
-                      AppNavigator.pushSlideX(
-                        context,
-                        BottomNavBar(),
-                      );
+                      // AppNavigator.pushSlideX(
+                      //   context,
+                      //   BottomNavBar(),
+                      // );
+
+                      context.pushNamed(AppRoutes.bottomNavBar);
+
                       // }
                     },
                     title: LocaleKeys.auth_label_login.tr(),

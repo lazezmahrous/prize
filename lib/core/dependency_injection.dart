@@ -1,5 +1,6 @@
 import 'package:prize/core/network/dio_factory.dart';
 import 'package:prize/core/utils/helper/cache_helper.dart';
+import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
 import 'package:prize/features/splash/bloc/settings_cubit.dart';
 import 'package:prize/features/splash/data/data_source/settings_api_service.dart';
 import 'package:prize/features/splash/data/repo/settings_repo.dart';
@@ -25,6 +26,10 @@ abstract class DI {
     _registerModule<ThemeRepo, ThemeCubit, CacheHelper>(
       repo: () => ThemeRepo(),
       cubit: () => ThemeCubit(di()),
+    );
+
+    _registerCubitOnly<BottomNavBarNavigatorCubit>(
+      () => BottomNavBarNavigatorCubit(),
     );
 
     // Auth
@@ -64,7 +69,12 @@ abstract class DI {
   }
 }
 
-void _registerModule<Repo extends Object, Cubit extends Object, DataSource extends Object>({
+void _registerCubitOnly<Cubit extends Object>(Cubit Function() cubit) {
+  DI.di.registerFactory<Cubit>(cubit);
+}
+
+void _registerModule<Repo extends Object, Cubit extends Object,
+    DataSource extends Object>({
   required Repo Function() repo,
   required Cubit Function() cubit,
   DataSource Function()? dataSource,

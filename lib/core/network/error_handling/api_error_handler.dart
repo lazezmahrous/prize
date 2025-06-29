@@ -5,6 +5,7 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/network/error_handling/api_error_model.dart';
 import 'package:prize/core/routing/app_router.dart';
+import 'package:prize/core/routing/routers.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:dio/dio.dart';
 import 'package:easy_localization/easy_localization.dart';

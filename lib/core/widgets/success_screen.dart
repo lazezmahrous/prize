@@ -1,3 +1,4 @@
+import 'package:prize/core/routing/routers.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_images.dart';
 import 'package:easy_localization/easy_localization.dart';

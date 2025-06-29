@@ -1,3 +1,4 @@
+import 'package:prize/core/routing/routers.dart';
 import 'package:prize/core/utils/extensions/color_extension.dart';
 import 'package:prize/core/utils/extensions/text_style_extension.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
