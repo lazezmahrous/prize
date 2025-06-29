@@ -3,7 +3,6 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_replacement.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/utils/resources/app_theme_text_styles.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
 import 'package:prize/features/onboarding/view/widgets/app_submit_button.dart';
 import 'package:easy_localization/easy_localization.dart';

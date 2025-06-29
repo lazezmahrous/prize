@@ -1,11 +1,12 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/data/models/category_model.dart';
 import 'package:prize/features/home/view/widgets/categories/single_dot_page_indicator.dart';
-import 'package:prize/features/onboarding/view/widgets/custom_page_indicator.dart';
 
 class AllCategoriseSectionWidget extends StatefulWidget {
   const AllCategoriseSectionWidget({super.key});
@@ -22,44 +23,45 @@ class _AllCategoriseSectionWidgetState
 
   final List<CategoryModel> _allCategories = [
     CategoryModel(
-        title: 'Kids fashion',
+        title: LocaleKeys.home_categories_categories_section_kids_fashion.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Men\'s fashion',
+        title: LocaleKeys.home_categories_categories_section_mens_fashion.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Women\'s fashion',
+        title:
+            LocaleKeys.home_categories_categories_section_Womens_fashion.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Home & Kitchen',
+        title: LocaleKeys.home_categories_categories_section_home_kitchen.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Appliances',
+        title: LocaleKeys.home_categories_categories_section_appliances.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Mobiles',
+        title: LocaleKeys.home_categories_categories_section_mobiles.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Video games',
+        title: LocaleKeys.home_categories_categories_section_video_games.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-      title: 'Televisions',
+      title: LocaleKeys.home_categories_categories_section_televisions.tr(),
       imagePath:
           "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C",
     ),
     CategoryModel(
-        title: 'Headphones',
+        title: LocaleKeys.home_categories_categories_section_headphones.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
     CategoryModel(
-        title: 'Cameras',
+        title: LocaleKeys.home_categories_categories_section_cameras.tr(),
         imagePath:
             "https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C"),
   ];

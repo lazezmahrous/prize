@@ -16,7 +16,6 @@ import 'core/utils/common/set_system_orientation.dart';
 import 'core/utils/config/setup_timeago_locales.dart';
 import 'features/package_info/data/model/package_info_model.dart'
     show PackageInfoModel;
-import 'features/splash/bloc/settings_cubit.dart';
 import 'prize_app.dart';
 
 void main() async {
@@ -52,7 +51,7 @@ void main() async {
       supportedLocales: Language.locales,
       path: 'assets/translations',
       ignorePluralRules: false,
-      child: InternetStateManagerInitializer.init(
+      child: InternetStateManagerInitializer(
         options: InternetStateOptions(
           autoCheckConnection: false,
           checkConnectionTimeout: const Duration(seconds: 5),
@@ -60,7 +59,7 @@ void main() async {
         child: MultiBlocProvider(
           providers: [
             // BlocProvider(create: (context) => DI.di<AuthCubit>(), lazy: false),
-            BlocProvider(create: (context) => DI.di<SettingsCubit>()),
+            // BlocProvider(create: (context) => DI.di<SettingsCubit>()),
             BlocProvider(
                 create: (context) => DI.di<ThemeCubit>()..getAppTheme(),
                 lazy: false),
