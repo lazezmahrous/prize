@@ -356,9 +356,9 @@
   "categories":{
     "appbar_title":"Categories",
     "categories_section":{
-      "kids_fashion":"Kids fashion",
-      "men_s_fashion":"Men's fashion",
-      "Women_s_fashion":"Women's fashion",
+      "kids_fashion":"Kid'\\s fashion",
+      "mens_fashion":"Men'\\s fashion",
+      "Womens_fashion":"Womens fashion",
       "home_kitchen":"Home & Kitchen",
       "appliances":"Appliances",
       "mobiles":"Mobiles",
