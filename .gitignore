@@ -47,8 +47,6 @@ app.*.map.json
 
 # Other files
 *.lock
-*.g.dart
-*.freezed.dart
 .env
 .metadata
 /devtools_options.yaml

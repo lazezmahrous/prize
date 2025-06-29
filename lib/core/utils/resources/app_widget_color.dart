@@ -20,9 +20,10 @@ class AppWidgetColor {
   static Color fillWidgetColor(BuildContext context) => context.isDarkMode
       ? AppColors.fillwidgetSecondDarkBlue
       : AppColors.primaryWhite;
-  static Color fillWidgetWithOrangeAndDarkColor(BuildContext context) => context.isDarkMode
-      ? AppColors.fillwidgetSecondDarkBlue
-      : AppColors.primary;
+  static Color fillWidgetWithOrangeAndDarkColor(BuildContext context) =>
+      context.isDarkMode
+          ? AppColors.fillwidgetSecondDarkBlue
+          : AppColors.primary;
   static Color secondFillWidgetColor(BuildContext context) =>
       context.isDarkMode ? AppColors.primaryDarkMode : AppColors.lightModeGray;
   static Color fillIconWidgetColor(BuildContext context) =>
@@ -35,6 +36,9 @@ class AppWidgetColor {
 
   static Color fillWithContrastColor(BuildContext context) =>
       context.isDarkMode ? AppColors.white : AppColors.secondperiwinkle;
+
+  static Color fillWithGrayAndDiColor(BuildContext context) =>
+      context.isDarkMode ? AppColors.darkBlue : AppColors.secondperiwinkle;
 
   // text field
   static Color outlineWidgetColor = AppColors.lightModeGray.withOpacity(.5);

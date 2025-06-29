@@ -1,3 +1,6 @@
+import 'package:prize/core/routing/app_router.dart';
+import 'package:prize/core/routing/routers.dart';
+import 'package:prize/core/utils/extensions/navigation_extension.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -72,10 +75,13 @@ class LoginScreen extends StatelessWidget {
                   AppSubmitButton(
                     onTap: () {
                       // if (formKey.currentState!.validate()) {
-                      AppNavigator.pushSlideX(
-                        context,
-                        BottomNavBar(),
-                      );
+                      // AppNavigator.pushSlideX(
+                      //   context,
+                      //   BottomNavBar(),
+                      // );
+
+                      context.pushNamed(AppRoutes.bottomNavBar);
+
                       // }
                     },
                     title: LocaleKeys.auth_label_login.tr(),

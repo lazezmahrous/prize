@@ -17,12 +17,15 @@ class BottomNavbarIconWidget extends StatelessWidget {
  final Color? iconColor;
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      iconPath,
-      color: cuttentIndex == selectedIndex
-          ? iconColor ?? AppColors.primary.withOpacity(.3)
-          : iconColor ?? AppColors.grey,
-      width: 30.w,
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.h),
+      child: SvgPicture.asset(
+        iconPath,
+        color: cuttentIndex == selectedIndex
+            ? iconColor ?? AppColors.primary.withOpacity(.8)
+            : iconColor ?? AppColors.moreLighterDarkPeriwinkle,
+        width: 30.w,
+      ),
     );
   }
 }

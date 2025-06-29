@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import 'package:prize/core/utils/extensions/color_extension.dart';
 // import 'package:prize/core/utils/extensions/text_style_extension.dart';
 // import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
@@ -19,6 +20,30 @@
 // import 'package:prize/core/utils/common/logout.dart';
 // import 'package:prize/core/utils/extensions/navigation_extension.dart';
 // import 'package:prize/features/language/view/screens/change_language_screen.dart';
+=======
+import 'package:prize/core/routing/routers.dart';
+import 'package:prize/core/utils/extensions/color_extension.dart';
+import 'package:prize/core/utils/extensions/text_style_extension.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
+import 'package:prize/core/widgets/customs/html_viewer_widget.dart';
+import 'package:prize/core/widgets/main/app_button.dart';
+import 'package:prize/core/widgets/main/snk_bar.dart';
+import 'package:prize/core/widgets/selectable_widgets/selectable_icon_option.dart';
+// import 'package:prize/features/profile/view/widgets/edit_profile_screen.dart';
+import 'package:prize/features/setting/view/widgets/setting_menu_group_widget.dart';
+import 'package:prize/features/setting/view/widgets/setting_menu_item.dart';
+import 'package:prize/features/splash/bloc/settings_cubit.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
+import 'package:prize/core/routing/app_router.dart';
+import 'package:prize/core/widgets/bottom_sheet/show_custom_bottom_sheet.dart';
+import 'package:prize/features/theme/view/widgets/change_theme_bottom_sheet_widget.dart';
+import 'package:prize/core/utils/resources/app_colors.dart';
+import 'package:prize/core/utils/resources/app_size.dart';
+import 'package:prize/core/utils/common/logout.dart';
+import 'package:prize/core/utils/extensions/navigation_extension.dart';
+import 'package:prize/features/language/view/screens/change_language_screen.dart';
+>>>>>>> 00ffef6277d94bf8db154156b220892c153fb648
 
 // class SettingsScreen extends StatelessWidget {
 //   const SettingsScreen({super.key});

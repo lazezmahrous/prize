@@ -10,13 +10,14 @@ import 'package:prize/features/complete_profile/view/widgets/product/show_produc
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 
 class ProductWidget extends StatelessWidget {
-  const ProductWidget({super.key, required this.itemData});
+  const ProductWidget({super.key, required this.itemData , this.onTap});
 
   final ProductModel itemData;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
+      onTap: onTap ?? () {
         showBottomSheet(
           context: context,
           builder: (context) => DetailsItemBottomSheetWidget(

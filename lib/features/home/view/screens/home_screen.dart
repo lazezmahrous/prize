@@ -5,7 +5,6 @@ import 'package:prize/features/home/view/widgets/best_gifts_for_grads/best_gifts
 import 'package:prize/features/home/view/widgets/birthday_gifts/birthday_gifts_widget.dart';
 import 'package:prize/features/home/view/widgets/categories/categories_widget.dart';
 import 'package:prize/features/home/view/widgets/create_wishlist_banar_widget.dart';
-import 'package:prize/features/home/view/widgets/custom_bottom_navbar/custom_bottm_navbar.dart';
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_widget.dart';
 import 'package:prize/features/home/view/widgets/other_events/other_events_widget.dart';
 import 'package:prize/features/home/view/widgets/upcoming_events/upcoming_events_widget.dart';
@@ -18,19 +17,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
+  final int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CustomBottomNavBar(
-        selectedIndex: _selectedIndex,
-        onItemTapped: (index) {
-          setState(() {
-            _selectedIndex = index;
-          });
-        },
-      ),
       body: CustomScrollView(
         slivers: [
           AppBarWidget(),
